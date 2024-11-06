@@ -1227,7 +1227,71 @@ Examples</h2>
 </div>
 </div>
 <a id="afbee6563f9fa2e87dee781802af27923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbee6563f9fa2e87dee781802af27923">&#9670;&nbsp;</a></span>EulerToQuaternion() <sp </td>
+<h2 class="memtitle"><span class="permalink"><a href="#afbee6563f9fa2e87dee781802af27923">&#9670;&nbsp;</a></span>EulerToQuaternion() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classgz_1_1math_1_1Quaternion.html">Quaternion</a>&lt;T&gt; EulerToQuaternion </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert Euler angles, in radians, to a quaternion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_x</td><td>rotation along x in radians </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_y</td><td>rotation along y in radians </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_z</td><td>rotation along z in radians </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting quaternion. </dd></dl>
+
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#aab7a155912aa0d198913dfb5bfb87a86">Quaternion&lt; T &gt;::EulerToQuaternion()</a>.</p>
+
+</div>
+</div>
+<a id="a4499891bd03946c0db84444368df2027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4499891bd03946c0db84444368df2027">&#9670;&nbsp;</a></span>Exp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgz_1_1math_1_1Quaternion.html">Quaternion</a>&lt;T&gt; Exp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1290,6 +1354,8 @@ Examples</h2>
 </dl>
 <p>Implementation inspired by <a href="http://stackoverflow.com/a/11741520/1076564">http://stackoverflow.com/a/11741520/1076564</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgz_1_1math_1_1Quaternion.html#afe0d5ea374e6fa4d77664561e1bfa965" title="Set this quaternion to represent rotation from vector _v1 to vector _v2, so that _v2....">SetFrom2Axes(const Vector3&lt;T&gt; &amp;, const Vector3&lt;T&gt; &amp;)</a> </dd></dl>
 
+<p class="reference">References <a class="el" href="classgz_1_1math_1_1Quaternion.html#afe0d5ea374e6fa4d77664561e1bfa965">Quaternion&lt; T &gt;::SetFrom2Axes()</a>.</p>
+
 </div>
 </div>
 <a id="acf8f12607d6f55cecd66d8c1f8e07649"></a>
@@ -1336,6 +1402,8 @@ Examples</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classgz_1_1math_1_1Quaternion.html" title="A quaternion class that represents 3D rotations and orientations. Four scalar values,...">Quaternion</a> at integrated configuration. </dd></dl>
 
+<p class="reference">References <a class="el" href="namespacegz_1_1math.html#a6f606e5c09c874aa9f00cd417ec045c0">gz::math::MIN_D</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#a9623de8878774ae8aad0dda9346fb05f">Vector3&lt; T &gt;::SquaredLength()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#ae6b656e82256821b0ef79462ca0079b8">Vector3&lt; T &gt;::X()</a>, <a class="el" href="classgz_1_1math_1_1Vector3.html#aecdad7e976b3ed74a1828eac4d958db6">Vector3&lt; T &gt;::Y()</a>, and <a class="el" href="classgz_1_1math_1_1Vector3.html#a253c4659f98e0cffd70ae20bbada9c48">Vector3&lt; T &gt;::Z()</a>.</p>
+
 </div>
 </div>
 <a id="a724dd60575e5faeb80563af1710c0c0e"></a>
@@ -1364,92 +1432,11 @@ Examples</h2>
 <p>Get the inverse of this quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>Inverse quaternion </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Pose3.html#a38e014375059c8c0d813b7b921a6c08e">Pose3&lt; T &gt;::CoordPoseSolve()</a>, <a class="el" href="classgz_1_1math_1_1Pose3.html#aacfddf9ba77a892073e1886ddb71a644">Pose3&lt; T &gt;::CoordPositionAdd()</a>, <a class="el" href="classgz_1_1math_1_1Pose3.html#adac734c8eee3deb333ce158dc2c35317">Pose3&lt; T &gt;::CoordPositionSub()</a>, <a class="el" href="classgz_1_1math_1_1Pose3.html#aab9197bc6ee2aec55fae22f6d248be64">Pose3&lt; T &gt;::CoordRotationSub()</a>, <a class="el" href="classgz_1_1math_1_1Pose3.html#ae9e598cc9fda620f445ca66eb8124e73">Pose3&lt; T &gt;::Inverse()</a>, <a class="el" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730">MassMatrix3&lt; T &gt;::PrincipalAxesOffset()</a>, <a class="el" href="classgz_1_1math_1_1Quaternion.html#a934f2aef375a2be3a55d05b8e1a74b15">Quaternion&lt; Precision &gt;::RotateVector()</a>, <a class="el" href="classgz_1_1math_1_1Quaternion.html#a7f769fe7315f027e976bc350e2bb0a1c">Quaternion&lt; Precision &gt;::RotateVectorReverse()</a>, and <a class="el" href="classgz_1_1math_1_1Inertial.html#a19ae8b63c925f91ee2bb9a40a0a54a53">Inertial&lt; T &gt;::SetMassMatrixRotation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Pose3.html#aab9197bc6ee2aec55fae22f6d248be64">Pose3&lt; T &gt;::CoordRotationSub()</a>, <a class="el" href="classgz_1_1math_1_1MassMatrix3.html#a2f5873ac88cab23f7391e6c34eb79730">MassMatrix3&lt; T &gt;::PrincipalAxesOffset()</a>, <a class="el" href="classgz_1_1math_1_1Quaternion.html#a934f2aef375a2be3a55d05b8e1a74b15">Quaternion&lt; T &gt;::RotateVector()</a>, <a class="el" href="classgz_1_1math_1_1Quaternion.html#a7f769fe7315f027e976bc350e2bb0a1c">Quaternion&lt; T &gt;::RotateVectorReverse()</a>, and <a class="el" href="classgz_1_1math_1_1Inertial.html#a19ae8b63c925f91ee2bb9a40a0a54a53">Inertial&lt; T &gt;::SetMassMatrixRotation()</a>.</p>
 
 </div>
 </div>
 <a id="acd68476b8afc6a2dcfb8663ead8b39cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd68476b8afc6a2dcfb8663ead8b39cd">&#9670;&nbsp;</a></span>Invert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Invert </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invert the quaternion. The quaternion is first normalized, then inverted. </p>
-
-</div>
-</div>
-<a id="a33b7dcc502aae627fbc56bcfecf33af1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33b7dcc502aae627fbc56bcfecf33af1">&#9670;&nbsp;</a></span>IsFinite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IsFinite </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>See if a quaternion is finite (e.g., not nan). </p>
-<dl class="section return"><dt>Returns</dt><dd>True if quaternion is finite. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classgz_1_1math_1_1Pose3.html#a33b7dcc502aae627fbc56bcfecf33af1">Pose3&lt; T &gt;::IsFinite()</a>.</p>
-
-</div>
-</div>
-<a id="aa2df71d16091317f8c157b1284500974"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2df71d16091317f8c157b1284500974">&#9670;&nbsp;</a></span>Log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgz_1_1math_1_1Quaternion.html">Quaternion</a>&lt;T&gt; Log </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the logarithm. </p>
-<p>If q = cos(A)+sin(A)*(x*i+y*j+z*k) where (x, y, z) is unit length, then log(q) = A*(x*i+y*j+z*k). If sin(A) is near zero, use log(q) = si68476b8afc6a2dcfb8663ead8b39cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd68476b8afc6a2dcfb8663ead8b39cd">&#9670;&nbsp;</a></span>Invert()</h2>
 
 <div class="memitem">
