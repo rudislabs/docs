@@ -222,7 +222,7 @@ Example</h2>
 <div class="line">  <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/boolalpha.html">std::boolalpha</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">const</span> <a class="code" href="classgz_1_1math_1_1Region3.html" title="The Region3 class represents the cartesian product of intervals Ix ✕ Iy ✕ Iz, one per axis,...">gz::math::Region3d</a> defaultRegion;</div>
-<div class="line">  <span class="comment">// A default constructed region should be empty.</span></div>
+<div class="line">  <span class="comment">// A default constructeed region should be empty.</span></div>
 <div class="line">  <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The &quot;</span> &lt;&lt; defaultRegion &lt;&lt; <span class="stringliteral">&quot; region is empty: &quot;</span></div>
 <div class="line">            &lt;&lt; defaultRegion.<a class="code" href="classgz_1_1math_1_1Region3.html#abcfbdba215d3b15fbb4b682969943a6e" title="Check if the region is empty A region is empty if any of the intervals it is defined with (i....">Empty</a>() &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"> </div>
@@ -240,7 +240,7 @@ Example</h2>
 <div class="line">  <span class="comment">// A closed region should include points on its boundary.</span></div>
 <div class="line">  <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The &quot;</span> &lt;&lt; closedRegion &lt;&lt; <span class="stringliteral">&quot; region contains the &quot;</span></div>
 <div class="line">            &lt;&lt; <a class="code" href="classgz_1_1math_1_1Vector3.html#ac0d510a5a21d32e18fc8b2f926845df6" title="math::Vector3(1, 0, 0)">gz::math::Vector3d::UnitX</a> &lt;&lt; <span class="stringliteral">&quot; point: &quot;</span></div>
-<div class="line">            &lt;&lt; closedRegion.<a class="code" href="classgz_1_1math_1_1Region3.html#a8852ab6f112280c6b519548f5c65903a" title="Check if the region contains _point">Contains</a>(<a class="code" href="classgz_1_1math_1_1Vector3.html#ac0d510a5a21d32e18fc8b2f926845df6" title="math::Vector3(1, 0, 0)">gz::math::Vector3d::UnitX</a>)</div>
+<div class="line">            &lt;&lt; closedRegio.<a class="code" href="classgz_1_1math_1_1Region3.html#a8852ab6f112280c6b519548f5c65903a" title="Check if the region contains _point">Contains</a>(<a class="code" href="classgz_1_1math_1_1Vector3.html#ac0d510a5a21d32e18fc8b2f926845df6" title="math::Vector3(1, 0, 0)">gz::math::Vector3d::UnitX</a>)</div>
 <div class="line">            &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Closed and open regions may intersect.</span></div>
